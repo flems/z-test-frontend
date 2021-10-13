@@ -10,7 +10,7 @@ const chalk = require('chalk')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const isWatch = process.env.WATCH == 'true' ? true : false;
+const isWatch = Boolean(process.env.WATCH)
 
 const env = require('../config/dev.env')
 // const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
